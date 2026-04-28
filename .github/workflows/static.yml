@@ -2,9 +2,9 @@ name: Deploy Tailwind Site
 on:
   push:
     branches: ["main"]
-  workflow_dispatch: # This adds a "Run workflow" button to the Actions tab
-  
-    permissions:
+  workflow_dispatch:
+
+permissions:
   contents: read
   pages: write
   id-token: write
@@ -24,12 +24,12 @@ jobs:
       - name: Install Tailwind & Build
         run: |
           npm install -D tailwindcss @tailwindcss/cli
-          npx @tailwindcss/cli -i ./krafton-style.css -o ./style.css # Adjust file names as needed
+          npx @tailwindcss/cli -i ./krafton-style.css -o ./style.css
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.' # Uploads your entire root folder
+          path: '.'
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
