@@ -1,7 +1,9 @@
 name: Deploy Tailwind Site
 on:
   push:
-    branches: ["main"] # Triggers every time you push to main
+    branches: ["main"]
+  workflow_dispatch: # This adds a "Run workflow" button to the Actions tab
+  
     permissions:
   contents: read
   pages: write
