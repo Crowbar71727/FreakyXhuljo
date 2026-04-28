@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Fix Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-left">
+            <a href="#" class="logo">4-7</a>
+            <div class="menu-container">
+                <button class="menu-button" aria-haspopup="true" aria-expanded="false">
+                    <span class="menu-icon">&#9776;</span> MENU <span class="arrow-icon">&#9650;</span>
+                </button>
+                <nav class="dropdown-nav">
+                    <ul class="nav-list">
+                        <li><a href="#game-features">Game Features</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#community">Community</a></li>
+                        <li><a href="#newsletter">Newsletter</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#games">Games</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header-center">
+            <h1 class="game-title">PROJEKT LOJA</h1>
+            <p class="game-subtitle">EARLY ACCESS</p>
+        </div>
+
+        <div class="header-right">
+            <div class="lang-container">
+                <button class="lang-button" aria-haspopup="true" aria-expanded="false">
+                    <span class="lang-icon">&#127760;</span> ENGLISH <span class="arrow-icon">&#9660;</span>
+                </button>
+                <nav class="lang-dropdown-nav">
+                    <ul class="lang-list">
+                        <li><a href="#">Deutsch</a></li>
+                        <li><a href="#">Español</a></li>
+                        <li><a href="#">Français</a></li>
+                        <li><a href="#">한국어</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="wishlist-header-button">WISHLIST</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="video-container">
+                <video id="heroVideo" width="100%" height="auto" autoplay muted loop>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-overlay-play-button">&#9658;</div>
+            </div>
+
+            <div class="hero-overlay-content">
+                <!-- Game title and subtitle are in the header -->
+
+            </div>
+
+            <div class="wishlist-overlay-area">
+                <h2 class="wishlist-title">WISHLIST</h2>
+                <div class="wishlist-buttons">
+                    <button class="platform-button steam"><img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg" alt="Steam Icon"> STEAM</button>
+                    <button class="platform-button xbox"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Xbox_one_logo.svg" alt="Xbox Icon"> XBOX</button>
+                    <button class="platform-button epic-games"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Epic_Games_logo.svg" alt="Epic Games Icon"> EPIC GAMES</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about-section" class="content-section animated-section">
+            <div class="about-background-image">
+
+            </div>
+            <div class="about-content-wrapper">
+                <div class="frosted-glass-box">
+                    <p class="intro-text">Subnautica 2 is an underwater survival adventure game set on an all-new alien ocean world. It is the next chapter in the Subnautica universe, developed by Unknown Worlds.</p>
+                    <p class="intro-text">Explore a vast, vibrant, and dangerous alien ocean. Craft tools, build habitats, and discover the mysteries of a hostile world. Survival depends on your wits and courage.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Features Section - Feature Carousel -->
+        <section id="game-features" class="content-section animated-section feature-carousel-section">
+            <div class="game-features-background-image"></div>
+            <div class="game-features-content-wrapper">
+                <h2 class="section-title">GAME FEATURES</h2>
+            <div class="carousel-container">
+                <button class="carousel-arrow left-arrow">&#10094;</button>
+                <div class="carousel-slides">
+                    <div class="carousel-slide active">
+                        <div class="carousel-image-container">
+                            <img src="https://via.placeholder.com/1000x563/0f2e4d/ffffff?text=Deep+Sea+Exploration" alt="Deep Sea Exploration" class="carousel-image">
+                        </div>
+                        <h3 class="carousel-heading">EXPLORE ALIEN BIOMES</h3>
+                        <p class="carousel-description">Dive into a vast, uncharted alien ocean. Discover new biomes, each with unique flora and fauna, hidden caves, and ancient secrets. Every dive offers a new adventure and breathtaking views.</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="carousel-image-container">
+                            <img src="https://via.placeholder.com/1000x563/0f2e4d/ffffff?text=Genetic+Evolution" alt="Genetic Evolution" class="carousel-image">
+                        </div>
+                        <h3 class="carousel-heading">GENETIC EVOLUTION</h3>
+                        <p class="carousel-description">Adapt and evolve to survive the perilous depths. Utilize advanced genetic modification technology to enhance your abilities, resist harsh environments, and even bond with certain lifeforms to gain unique advantages.</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="carousel-image-container">
+                            <img src="https://via.placeholder.com/1000x563/0f2e4d/ffffff?text=Resource+Gathering" alt="Resource Gathering" class="carousel-image">
+                        </div>
+                        <h3 class="carousel-heading">RESOURCE GATHERING & CRAFTING</h3>
+                        <p class="carousel-description">Scavenge for vital resources across the ocean floor. Craft essential tools, vehicles, and habitats to establish your base of operations and explore deeper into the unknown. Survival depends on your ingenuity.</p>
+                    </div>
+                </div>
+                <button class="carousel-arrow right-arrow">&#10095;</button>
+            </div>
+            <div class="carousel-pagination-progress">
+                <div class="progress-bar active"></div>
+                <div class="progress-bar"></div>
+                <div class="progress-bar"></div>
+            </div>
+            </div>
+        </section>
+
+        <section id="news" class="content-section animated-section news-section-grid">
+            <div class="news-background-image">
+            </div>
+            <div class="news-content-wrapper">
+                <div class="section-header-lines">
+                    <span class="line"></span>
+                    <h2 class="section-title">LATEST NEWS</h2>
+                    <span class="line"></span>
+                </div>
+                <div class="news-cards-grid">
+                    <div class="news-card">
+                        <img src="image assets/Starsystem.jpg" alt="News Thumbnail 1" class="card-thumbnail">
+                        <div class="card-body">
+                            <h3 class="card-header">NEW UPDATE RELEASED</h3>
+                            <p>Discover the latest features and bug fixes in our newest game update. Dive in now!</p>
+                            <button class="read-more-button">READ MORE</button>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <img src="image assets/Starsystem.jpg" alt="News Thumbnail 2" class="card-thumbnail">
+                        <div class="card-body">
+                            <h3 class="card-header">DEVELOPER Q&A SESSION</h3>
+                            <p>Join our developers for a live Q&A session next week. Ask anything about the game!</p>
+                            <button class="read-more-button">READ MORE</button>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <img src="image assets/Starsystem.jpg" alt="News Thumbnail 3" class="card-thumbnail">
+                        <div class="card-body">
+                            <h3 class="card-header">COMMUNITY SPOTLIGHT</h3>
+                            <p>Highlighting amazing creations and contributions from our dedicated community members.</p>
+                            <button class="read-more-button">READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="community" class="content-section animated-section">
+            <div class="community-background-image"></div>
+            <div class="community-content-wrapper">
+                <div class="community-tabs-nav">
+                    <button class="tab-button active" data-tab="community-pulse">Community Pulse</button>
+                    <button class="tab-button" data-tab="explorers-codex">Explorer's Codex</button>
+                </div>
+
+                <div id="community-pulse" class="tab-content active">
+                    <div class="frosted-glass-box">
+                        <h3>Question of the Week</h3>
+                        <div class="strawpoll-embed" id="strawpoll_PKgle96q4Zp" style="max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_PKgle96q4Zp" src="https://strawpoll.com/embed/PKgle96q4Zp" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+                    </div>
+
+                    <div class="frosted-glass-box">
+                        <h3>Wall of Fame</h3>
+                        <p>[Placeholder for user-submitted fan art / screenshots grid]</p>
+                        <div class="wall-of-fame-carousel-container carousel-container">
+                            <button class="carousel-arrow left-arrow wall-of-fame-left-arrow">&#10094;</button>
+                            <div class="carousel-slides wall-of-fame-carousel-slides">
+                                <div class="carousel-slide active">
+                                    <div class="carousel-image-container">
+                                        <img src="image assets/Starsystem.jpg" alt="Fan Art 1" class="carousel-image">
+                                    </div>
+                                    <h3 class="carousel-heading">Fan Art 1</h3>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="carousel-image-container">
+                                        <img src="image assets/Starsystem.jpg" alt="Fan Art 2" class="carousel-image">
+                                    </div>
+                                    <h3 class="carousel-heading">Fan Art 2</h3>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="carousel-image-container">
+                                        <img src="image assets/galaxy-bg.avif" alt="Fan Art 3" class="carousel-image">
+                                    </div>
+                                    <h3 class="carousel-heading">Fan Art 3</h3>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="carousel-image-container">
+                                        <img src="image assets/galaxy-bg.avif" alt="Fan Art 4" class="carousel-image">
+                                    </div>
+                                    <h3 class="carousel-heading">Fan Art 4</h3>
+                                </div>
+                            </div>
+                            <button class="carousel-arrow right-arrow wall-of-fame-right-arrow">&#10095;</button>
+                        </div>
+                        <div class="carousel-pagination-progress wall-of-fame-pagination">
+                            <div class="progress-bar active"></div>
+                            <div class="progress-bar"></div>
+                            <div class="progress-bar"></div>
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="explorers-codex" class="tab-content">
+                    <div class="frosted-glass-box">
+                        <h3>Explorer's Codex: Item Cards</h3>
+                        <p>Click on cards for details:</p>
+                        <div class="item-cards-grid">
+                            <div class="item-card" data-accordion="item1">
+                                <h4>Survival Knife</h4>
+                                <img src="image assets/Starsystem.jpg" alt="Survival Knife Image">
+                                <div class="accordion-content">
+                                    <p><b>Getting Started:</b> Essential for early game resource gathering and defense.</p>
+                                    <p><b>Basic Controls:</b> Left click to swing, right click to hold.</p>
+                                    <p><b>Game Glossary:</b> "Tool" - a handheld device for interaction.</p>
+                                </div>
+                            </div>
+                            <div class="item-card" data-accordion="item2">
+                                <h4>Oxygen Tank</h4>
+                                <img src="image assets/Starsystem.jpg" alt="Oxygen Tank Image">
+                                <div class="accordion-content">
+                                    <p><b>Getting Started:</b> Craft early to extend dive times. Crucial for exploration.</p>
+                                    <p><b>Basic Controls:</b> Automatically equips when in water.</p>
+                                    <p><b>Game Glossary:</b> "Resource" - a material used for crafting.</p>
+                                </div>
+                            </div>
+                            <div class="item-card" data-accordion="item3">
+                                <h4>Seamoth</h4>
+                                <img src="image assets/Starsystem.jpg" alt="Seamoth Image">
+                                <div class="accordion-content">
+                                    <p><b>Getting Started:</b> Build in a Vehicle Bay for faster, safer exploration.</p>
+                                    <p><b>Basic Controls:</b> WASD to move, Space to ascend, Ctrl to descend.</p>
+                                    <p><b>Game Glossary:</b> "Vehicle" - a craftable machine for traversal.</p>
+                                </div>
+                            </div>
+                            <div class="item-card" data-accordion="item4">
+                                <h4>Fins</h4>
+                                <img src="image assets/Starsystem.jpg" alt="Fins Image">
+                                <div class="accordion-content">
+                                    <p><b>Getting Started:</b> Equip to increase swim speed significantly.</p>
+                                    <p><b>Basic Controls:</b> Automatically enhances swim speed.</p>
+                                    <p><b>Game Glossary:</b> "Gear" - equipable item providing passive bonuses.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="frosted-glass-box" style="margin-top: 40px;">
+                        <h3>Explorer's Codex: Advanced Tools</h3>
+                        <p>More tools for deeper exploration:</p>
+                        <div class="item-cards-grid">
+                            <div class="item-card" data-accordion="item5">
+                                <h4>Seaglide</h4>
+                                <img src="image assets/Starsystem.jpg" alt="Seaglide Image">
+                                <div class="accordion-content">
+                                    <p><b>Getting Started:</b> A handheld propulsion vehicle for fast underwater travel.</p>
+                                    <p><b>Basic Controls:</b> Hold left click to activate, use WASD for direction.</p>
+                                    <p><b>Game Glossary:</b> "Gadget" - a portable electronic device.</p>
+                                </div>
+                            </div>
+                            <div class="item-card" data-accordion="item6">
+                                <h4>Laser Cutter</h4>
+                                <img src="image assets/Starsystem.jpg" alt="Laser Cutter Image">
+                                <div class="accordion-content">
+                                    <p><b>Getting Started:</b> Used to cut open sealed doors and wreckage.</p>
+                                    <p><b>Basic Controls:</b> Point and hold left click to cut.</p>
+                                    <p><b>Game Glossary:</b> "Tool" - specialized equipment for specific tasks.</p>
+                                </div>
+                            </div>
+                            <div class="item-card" data-accordion="item7">
+                                <h4>Propulsion Cannon</h4>
+                                <img src="image assets/Starsystem.jpg" alt="Propulsion Cannon Image">
+                                <div class="accordion-content">
+                                    <p><b>Getting Started:</b> Grabs and propels objects, useful for clearing paths.</p>
+                                    <p><b>Basic Controls:</b> Left click to grab, right click to propel.</p>
+                                    <p><b>Game Glossary:</b> "Utility" - an item with practical applications.</p>
+                                </div>
+                            </div>
+                            <div class="item-card" data-accordion="item8">
+                                <h4>Scanner Room</h4>
+                                <img src="image assets/Starsystem.jpg" alt="Scanner Room Image">
+                                <div class="accordion-content">
+                                    <p><b>Getting Started:</b> Base module for scanning surrounding biomes for resources and lifeforms.</p>
+                                    <p><b>Basic Controls:</b> Interact with console to deploy scanner drones.</p>
+                                    <p><b>Game Glossary:</b> "Module" - a component of a larger structure.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- Buy Now / Social Media Section -->
+        <section id="buy-social-section" class="content-section animated-section">
+            <div class="buy-modules-container">
+                <div class="buy-module">
+                    <h3>BUY NOW ON STEAM</h3>
+                    <button class="platform-button steam"><img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg" alt="Steam Icon"> BUY NOW</button>
+                </div>
+                <div class="buy-module">
+                    <h3>BUY NOW ON XBOX</h3>
+                    <button class="platform-button xbox"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Xbox_one_logo.svg" alt="Xbox Icon"> BUY NOW</button>
+                </div>
+            </div>
+            <div class="social-media-icons">
+                <a href="#" class="social-icon"><img src="https://via.placeholder.com/30/00bcd4/ffffff?text=FB" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="https://via.placeholder.com/30/00bcd4/ffffff?text=TW" alt="Twitter"></a>
+                <a href="#" class="social-icon"><img src="https://via.placeholder.com/30/00bcd4/ffffff?text=YT" alt="YouTube"></a>
+                <a href="#" class="social-icon"><img src="https://via.placeholder.com/30/00bcd4/ffffff?text=IG" alt="Instagram"></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="legal-text">© 2026 Fiks. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <p class="esrb-rating">ESRB RATING PENDING</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top">&#9650;</button>
+
+    <script>
+        document.querySelector(".menu-button").addEventListener("click", function() {
+            const dropdown = this.nextElementSibling;
+            const isExpanded = this.getAttribute("aria-expanded") === "true";
+            this.setAttribute("aria-expanded", !isExpanded);
+            dropdown.classList.toggle("show");
+            
+            // Close other dropdowns
+            document.querySelector(".lang-dropdown-nav").classList.remove("show");
+            document.querySelector(".lang-button").setAttribute("aria-expanded", "false");
+        });
+
+        document.querySelector(".lang-button").addEventListener("click", function() {
+            const dropdown = this.nextElementSibling;
+            const isExpanded = this.getAttribute("aria-expanded") === "true";
+            this.setAttribute("aria-expanded", !isExpanded);
+            dropdown.classList.toggle("show");
+
+            // Close other dropdowns
+            document.querySelector(".dropdown-nav").classList.remove("show");
+            document.querySelector(".menu-button").setAttribute("aria-expanded", "false");
+        });
+
+        // Close all dropdowns if the user clicks outside of them
+        window.addEventListener("click", function(event) {
+            if (!event.target.closest(".menu-container") && !event.target.closest(".lang-container")) {
+                document.querySelector(".dropdown-nav").classList.remove("show");
+                document.querySelector(".menu-button").setAttribute("aria-expanded", "false");
+                document.querySelector(".lang-dropdown-nav").classList.remove("show");
+                document.querySelector(".lang-button").setAttribute("aria-expanded", "false");
+            }
+        });
+
+        // Custom video controls
+        const heroVideo = document.getElementById("heroVideo");
+        const playButton = document.querySelector(".video-overlay-play-button");
+
+        // Hide the play button when video is playing, show when paused
+        heroVideo.addEventListener("play", () => {
+            playButton.style.display = "none";
+        });
+
+        heroVideo.addEventListener("pause", () => {
+            playButton.style.display = "block";
+        });
+
+        // Toggle play/pause when clicking the custom play button
+        playButton.addEventListener("click", () => {
+            if (heroVideo.paused) {
+                heroVideo.play();
+            } else {
+                heroVideo.pause();
+            }
+        });
+
+        // Double click for fullscreen
+        heroVideo.addEventListener("dblclick", () => {
+            if (heroVideo.requestFullscreen) {
+                heroVideo.requestFullscreen();
+            } else if (heroVideo.mozRequestFullScreen) { /* Firefox */
+                heroVideo.mozRequestFullScreen();
+            } else if (heroVideo.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+                heroVideo.webkitRequestFullscreen();
+            } else if (heroVideo.msRequestFullscreen) { /* IE/Edge */
+                heroVideo.msRequestFullscreen();
+            }
+        });
+
+        // Prevent default interactions on video
+        heroVideo.addEventListener("mousemove", (e) => e.preventDefault());
+        heroVideo.addEventListener("mousedown", (e) => e.preventDefault());
+        heroVideo.addEventListener("mouseup", (e) => e.preventDefault());
+        // heroVideo.addEventListener("click", (e) => e.preventDefault()); // This was preventing play button from working, handled by play/pause logic
+
+        // Intersection Observer for fade-in animation
+        const animatedSections = document.querySelectorAll(".animated-section");
+
+        const observerOptions = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.1 // Trigger when 10% of the item is visible
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("fade-in-visible");
+                    observer.unobserve(entry.target); // Stop observing after animation
+                }
+            });
+        }, observerOptions);
+
+        animatedSections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Generic Carousel functionality
+function initializeCarousel(slidesSelector, leftArrowSelector, rightArrowSelector, progressBarsSelector) {
+            const carouselSlides = document.querySelectorAll(slidesSelector);
+            const leftArrow = document.querySelector(leftArrowSelector);
+            const rightArrow = document.querySelector(rightArrowSelector);
+            const progressBars = document.querySelectorAll(progressBarsSelector);
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                carouselSlides.forEach((slide, i) => {
+                    slide.classList.remove("active");
+                    if (i === index) {
+                        slide.classList.add("active");
+                    }
+                });
+                progressBars.forEach((bar, i) => {
+                    if (i === index) {
+                        bar.style.backgroundColor = "#ff8c00"; // Active orange
+                    } else {
+                        bar.style.backgroundColor = "rgba(255, 140, 0, 0.5)"; // Inactive orange with transparency
+                    }
+                });
+            }
+
+            if (leftArrow) { // Check if arrow exists before adding event listener
+                leftArrow.addEventListener("click", () => {
+                    currentSlide = (currentSlide - 1 + carouselSlides.length) % carouselSlides.length;
+                    showSlide(currentSlide);
+                });
+            }
+
+            if (rightArrow) { // Check if arrow exists before adding event listener
+                rightArrow.addEventListener("click", () => {
+                    currentSlide = (currentSlide + 1) % carouselSlides.length;
+                    showSlide(currentSlide);
+                });
+            }
+
+            showSlide(currentSlide); // Initialize carousel
+        }
+
+        // Initialize Game Features Carousel
+        initializeCarousel(".feature-carousel-section .carousel-slide", ".feature-carousel-section .left-arrow", ".feature-carousel-section .right-arrow", ".feature-carousel-section .carousel-pagination-progress .progress-bar");
+
+        // Initialize Wall of Fame Carousel
+        initializeCarousel(".wall-of-fame-carousel-slides .carousel-slide", ".wall-of-fame-left-arrow", ".wall-of-fame-right-arrow", ".wall-of-fame-pagination .progress-bar");
+
+        // Scroll-to-top button functionality
+        const scrollToTopButton = document.querySelector(".scroll-to-top");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 200) { // Show button after scrolling down 200px
+                scrollToTopButton.classList.add("show");
+            } else {
+                scrollToTopButton.classList.remove("show");
+            }
+        });
+
+        scrollToTopButton.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+        // Community Hub Tab Functionality
+        document.addEventListener("DOMContentLoaded", () => {
+            const tabButtons = document.querySelectorAll(".community-tabs-nav .tab-button");
+            const tabContents = document.querySelectorAll(".community-content-wrapper .tab-content");
+
+            tabButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const targetTab = button.dataset.tab;
+
+                    // Deactivate all tab buttons and hide all tab contents
+                    tabButtons.forEach(btn => btn.classList.remove("active"));
+                    tabContents.forEach(content => content.classList.remove("active"));
+
+                    // Activate the clicked tab button and show its content
+                    button.classList.add("active");
+                    document.getElementById(targetTab).classList.add("active");
+                });
+            });
+
+            // Explorer's Codex Accordion Functionality
+            const itemCards = document.querySelectorAll(".item-cards-grid .item-card");
+
+            itemCards.forEach(clickedCard => {
+                clickedCard.addEventListener("click", () => {
+                    // Close all other open cards
+                    itemCards.forEach(card => {
+                        if (card !== clickedCard && card.classList.contains("active")) {
+                            card.classList.remove("active");
+                        }
+                    });
+                    // Toggle the clicked card
+                    clickedCard.classList.toggle("active");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
