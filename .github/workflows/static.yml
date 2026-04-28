@@ -17,7 +17,7 @@ jobs:
       - name: Install Tailwind & Build
         run: |
           npm install -D tailwindcss @tailwindcss/cli
-          npx @tailwindcss/cli -i ./input.css -o ./style.css # Adjust file names as needed
+          npx @tailwindcss/cli -i ./krafton-style.css -o ./style.css # Adjust file names as needed
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
